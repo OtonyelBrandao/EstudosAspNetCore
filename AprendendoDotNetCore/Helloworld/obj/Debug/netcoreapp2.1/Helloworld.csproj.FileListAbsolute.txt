@@ -1,0 +1,14 @@
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\bin\Debug\netcoreapp2.1\Helloworld.deps.json
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\bin\Debug\netcoreapp2.1\Helloworld.runtimeconfig.json
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\bin\Debug\netcoreapp2.1\Helloworld.runtimeconfig.dev.json
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\bin\Debug\netcoreapp2.1\Helloworld.dll
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\bin\Debug\netcoreapp2.1\Helloworld.pdb
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\obj\Debug\netcoreapp2.1\Helloworld.csprojAssemblyReference.cache
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\obj\Debug\netcoreapp2.1\Helloworld.csproj.CoreCompileInputs.cache
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\obj\Debug\netcoreapp2.1\Helloworld.RazorAssemblyInfo.cache
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\obj\Debug\netcoreapp2.1\Helloworld.RazorAssemblyInfo.cs
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\obj\Debug\netcoreapp2.1\Helloworld.AssemblyInfoInputs.cache
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\obj\Debug\netcoreapp2.1\Helloworld.AssemblyInfo.cs
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\obj\Debug\netcoreapp2.1\Helloworld.RazorTargetAssemblyInfo.cache
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\obj\Debug\netcoreapp2.1\Helloworld.dll
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\AprendendoDotNetCore\Helloworld\obj\Debug\netcoreapp2.1\Helloworld.pdb

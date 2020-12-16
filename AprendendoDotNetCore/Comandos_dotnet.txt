@@ -1,0 +1,9 @@
+dotnet <- para executar comandoes em dot net
+new <- para criar um novo projeto	
+web <- para definir um projeto como projeto web
+-o <- prar criar uma pasta
+run <- para execultar um projeto
+build <- compila um codigo de uma aplicação
+razor <- <- para definir um projeto como AspNet Core Web
+
+Comandos compostos
