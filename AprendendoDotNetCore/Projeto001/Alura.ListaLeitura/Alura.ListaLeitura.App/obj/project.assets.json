@@ -5442,11 +5442,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ccpus\\OneDrive\\Área de Trabalho\\Otonyel\\AprendendoDotNetCore\\Projeto001\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj",
+      "projectUniqueName": "C:\\Users\\ccpus\\OneDrive\\Área de Trabalho\\Otonyel\\EstudosAspNetCore\\AprendendoDotNetCore\\Projeto001\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj",
       "projectName": "Alura.ListaLeitura.App",
-      "projectPath": "C:\\Users\\ccpus\\OneDrive\\Área de Trabalho\\Otonyel\\AprendendoDotNetCore\\Projeto001\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj",
+      "projectPath": "C:\\Users\\ccpus\\OneDrive\\Área de Trabalho\\Otonyel\\EstudosAspNetCore\\AprendendoDotNetCore\\Projeto001\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj",
       "packagesPath": "C:\\Users\\ccpus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ccpus\\OneDrive\\Área de Trabalho\\Otonyel\\AprendendoDotNetCore\\Projeto001\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\obj\\",
+      "outputPath": "C:\\Users\\ccpus\\OneDrive\\Área de Trabalho\\Otonyel\\EstudosAspNetCore\\AprendendoDotNetCore\\Projeto001\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
