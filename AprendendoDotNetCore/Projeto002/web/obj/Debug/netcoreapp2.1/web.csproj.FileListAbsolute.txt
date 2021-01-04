@@ -1,0 +1,14 @@
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\bin\Debug\netcoreapp2.1\web.deps.json
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\bin\Debug\netcoreapp2.1\web.runtimeconfig.json
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\bin\Debug\netcoreapp2.1\web.runtimeconfig.dev.json
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\bin\Debug\netcoreapp2.1\web.dll
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\bin\Debug\netcoreapp2.1\web.pdb
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\obj\Debug\netcoreapp2.1\web.csprojAssemblyReference.cache
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\obj\Debug\netcoreapp2.1\web.csproj.CoreCompileInputs.cache
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\obj\Debug\netcoreapp2.1\web.RazorAssemblyInfo.cache
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\obj\Debug\netcoreapp2.1\web.RazorAssemblyInfo.cs
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\obj\Debug\netcoreapp2.1\web.AssemblyInfoInputs.cache
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\obj\Debug\netcoreapp2.1\web.AssemblyInfo.cs
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\obj\Debug\netcoreapp2.1\web.RazorTargetAssemblyInfo.cache
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\obj\Debug\netcoreapp2.1\web.dll
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto002\web\obj\Debug\netcoreapp2.1\web.pdb

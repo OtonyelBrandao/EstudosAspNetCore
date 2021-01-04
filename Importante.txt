@@ -1,1 +1,3 @@
-https://cursos.alura.com.br/course/introducao-ao-mvc-com-asp-net-core/task/36083
+https://cursos.alura.com.br/category/programacao#dotnet-para-web
+
+https://cursos.alura.com.br/course/webapp-com-aspnet-core-2/task/37845 Proxima Aula

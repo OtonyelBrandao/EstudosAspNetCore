@@ -9,11 +9,18 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="HTML\formulario.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="HTML\para-ler.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Repositorio\livros.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

@@ -22,3 +22,5 @@ C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDo
 C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto001\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.AssemblyInfo.cs
 C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto001\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.dll
 C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto001\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.pdb
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto001\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\HTML\formulario.html
+C:\Users\ccpus\OneDrive\Área de Trabalho\Otonyel\EstudosAspNetCore\AprendendoDotNetCore\Projeto001\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\HTML\para-ler.html
