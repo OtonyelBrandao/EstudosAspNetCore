@@ -12,19 +12,25 @@ namespace CasaDoCodigo.Controllers
     {
         private readonly IProdutoRepository produtoRepository;
         private readonly IPedidoRepository pedidoRepository;
+        private readonly IItemPedidoRepository itempedidoRepository;
 
-        public PedidoController(IProdutoRepository produtoRepository, IPedidoRepository pedidoRepository)
+        public PedidoController(IProdutoRepository produtoRepository, IPedidoRepository pedidoRepository, IItemPedidoRepository itempedidoRepository)
         {
             this.produtoRepository = produtoRepository;
             this.pedidoRepository = pedidoRepository;
+            this.itempedidoRepository = itempedidoRepository;
         }
 
         public IActionResult Carrossel()
         {
             return View(produtoRepository.GetProduto());
         }
-        public IActionResult Carrinho()
+        public IActionResult Carrinho(string codigo)
         {
+            if (!string.IsNullOrEmpty(codigo))
+            {
+                pedidoRepository.AddItem(codigo);
+            }
             Pedido pedido = pedidoRepository.GetPedido();
             return View(pedido.Itens);
         }
@@ -34,7 +40,14 @@ namespace CasaDoCodigo.Controllers
         }
         public IActionResult Resumo()
         {
-            return View();
+            Pedido pedido = pedidoRepository.GetPedido();
+            return View(pedido);
+        }
+        [HttpPost]
+        public void UpdateQuantidade([FromBody]ItemPedido itemPedido)
+        {
+            itempedidoRepository.UpdateQuantidade(itemPedido);
+
         }
     }
 }

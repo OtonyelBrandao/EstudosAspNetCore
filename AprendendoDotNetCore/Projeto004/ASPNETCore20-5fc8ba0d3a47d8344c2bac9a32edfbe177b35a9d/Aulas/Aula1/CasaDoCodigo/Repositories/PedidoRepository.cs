@@ -26,13 +26,13 @@ namespace CasaDoCodigo.Repositories
         {
             var produto = context.Set<Produto>()
                 .Where(p => p.Codigo == codigo)
-                .SingleOrDefault();
+                .FirstOrDefault();
             if (produto == null)
             {
                 throw new ArgumentException("Produto não encontrado");
             }
             var pedido = GetPedido();
-            var itemPedido = context.Set<ItemPedido>().Where(i => i.Produto.Codigo == produto.Codigo 
+            var itemPedido = context.Set<ItemPedido>().Where(i => i.Produto.Codigo == codigo 
             && i.Pedido.Id == pedido.Id)
             .SingleOrDefault();
             if(itemPedido == null)
@@ -48,7 +48,10 @@ namespace CasaDoCodigo.Repositories
         public Pedido GetPedido()
         {
             var pedidoId = GetPedidoId();
-            var pedido = dbSet.Where(p => p.Id == pedidoId).SingleOrDefault();
+            var pedido = dbSet
+                .Include(p => p.Itens)
+                    .ThenInclude(p => p.Produto)
+                .Where(p => p.Id == pedidoId).SingleOrDefault();
             if (pedido == null) 
             {
                 pedido = new Pedido();

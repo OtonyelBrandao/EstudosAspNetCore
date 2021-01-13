@@ -1,4 +1,4 @@
-﻿@model IList<ItemPedido>
+﻿@model CarrinhoViewModel;
 @{
     ViewData["Title"] = "Carrinho";
 }
@@ -23,9 +23,9 @@
         </div>
     </div>
     <div class="panel-body">
-        @foreach (var item in Model)
+        @foreach (var item in Model.Itens)
         {
-            <div class="row row-center linha-produto">
+            <div class="row row-center linha-produto" item-id="@(item.Id)">
                 <div class="col-md-3">
                     <img class="img-produto-carrinho" src="/images/produtos/large_@(item.Produto.Codigo).jpg" />
                 </div>
@@ -34,14 +34,14 @@
                 <div class="col-md-2 text-center">
                     <div class="input-group">
                         <span class="input-group-btn">
-                            <button class="btn btn-default">
+                            <button class="btn btn-default" onclick="carrinho.ClickDecremento(this)">
                                 <span class="glyphicon-minus"></span>
                             </button>
                         </span>
                         <input type="text" value="@(item.Quantidade)"
-                               class="form-control text-center" />
+                               class="form-control text-center" onblur="carrinho.updateQuantidade(this)"/>
                         <span class="input-group-btn">
-                            <button class="btn btn-default">
+                            <button class="btn btn-default" onclick="carrinho.ClickIncremento(this)">
                                 <span class="glyphicon-plus"></span>
                             </button>
                         </span>
@@ -60,13 +60,13 @@
         <div class="row">
             <div class="col-md-10">
                 <span numero-itens>
-                    Total: 3
+                    Total: @(Model.Itens.Count())
                     itens
                 </span>
             </div>
             <div class="col-md-2">
                 Total: R$ <span class="pull-right" total>
-                    419,40
+                    @(Model.total)
                 </span>
             </div>
         </div>
@@ -78,9 +78,17 @@
             <a class="btn btn-success" asp-action="Carrossel">
                 Adicionar Produtos
             </a>
-            <a class="btn btn-success" asp-action="Cadastro">
-                Preencher Cadastro
+            <a class="btn btn-success" asp-action="resumo">
+                Finalizar Pedido
             </a>
         </div>
     </div>
 </div>
+@* src="~/js/carrinho.js" *@
+@section Scripts{
+    <script type="text/javascript" src="~/js/carrinho.js">
+        //function ClickIncremento(btn) {
+        //    debugger;
+        //}
+    </script>
+}

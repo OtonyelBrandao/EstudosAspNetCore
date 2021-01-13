@@ -19,7 +19,7 @@ namespace CasaDoCodigo
             //HasKey Para Indica Chave Primaria
             //HasMany Para Relacionamentos de 1 : n
             //HasOne Para Relacionamentos de 1 : 1
-            //WithOne Para India Um relacionamento de Volta
+            //WithOne Para Indica Um relacionamento de Volta
             //IsRequered Para Indicar Que o atributo é obgrigatorio
             modelBuilder.Entity<Produto>().HasKey(t => t.Id);
             

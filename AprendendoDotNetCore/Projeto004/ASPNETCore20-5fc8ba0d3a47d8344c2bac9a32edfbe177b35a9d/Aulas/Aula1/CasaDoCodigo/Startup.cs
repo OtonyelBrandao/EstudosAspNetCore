@@ -29,6 +29,8 @@ namespace CasaDoCodigo
             //Adicionando Serviço transitorio de DataService e IDataService
             services.AddTransient<IDataService,DataService>();
             services.AddTransient<IProdutoRepository, ProdutoRepository>();
+            services.AddTransient<IPedidoRepository, PedidoRepository>();
+            services.AddTransient<IItemPedidoRepository, ItemPedidoRepository>();
             //Fornecendo Serviço de padrão de arquitetura MVC.
             services.AddMvc();
             //Fornecendo Servico DeConexão com o banco de dados.
