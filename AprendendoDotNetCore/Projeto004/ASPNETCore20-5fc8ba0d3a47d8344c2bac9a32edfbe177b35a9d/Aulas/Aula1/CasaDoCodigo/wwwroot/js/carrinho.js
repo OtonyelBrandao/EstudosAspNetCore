@@ -23,13 +23,18 @@
             Quantidade: novaQtde
         };
     }
-    PostGetData(data){
+    PostGetData(data) {
+
+        let token = $('[name=__RequestVerificationToken]').val();
+        let headers = {};
+        headers['RequestVerificationToken'] = token;
+
         $.ajax({
             url: '/Pedido/UpdateQuantidade',
             type: 'Post',
             contentType: 'application/json',
-            data: JSON.stringify(data)
-
+            data: JSON.stringify(data),
+            headers: headers
         }).done(function (response) {
             let itempedido = response.itemPedido;
             var linhadoitem = $('[item-id=' + itempedido.id + ']');

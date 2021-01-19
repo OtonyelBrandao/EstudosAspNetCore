@@ -9,7 +9,7 @@ namespace CasaDoCodigo.Repositories
 {
     public interface ICadastroRepository
     {
-
+        Cadastro Update(int CadastroId, Cadastro novoCadastro);
     }
     public class CadastroRepository : BaseRepository<Cadastro>, ICadastroRepository
     {
@@ -17,5 +17,20 @@ namespace CasaDoCodigo.Repositories
         {
         }
 
+        public Cadastro Update(int CadastroId, Cadastro novoCadastro)
+        {
+            var cadastroDB =
+                dbSet.Where(c => c.Id == CadastroId)
+                .SingleOrDefault();
+
+            if (cadastroDB == null)
+            {
+                throw new ArgumentNullException("cadastro");
+            }
+
+            cadastroDB.Update(novoCadastro);
+            context.SaveChanges();
+            return cadastroDB;
+        }
     }
 }

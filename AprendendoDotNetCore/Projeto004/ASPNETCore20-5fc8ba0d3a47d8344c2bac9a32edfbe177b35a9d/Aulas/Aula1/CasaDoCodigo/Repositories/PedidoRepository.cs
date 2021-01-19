@@ -14,16 +14,20 @@ namespace CasaDoCodigo.Repositories
         Pedido GetPedido();
         void AddItem(string codigo);
         UpdateQuantidadeResponse UpdateQuantidade(ItemPedido itemPedido);
+        Pedido UpdateCadastro(Cadastro cadastro);
     }
     public class PedidoRepository : BaseRepository<Pedido>, IPedidoRepository
     {
         private readonly IHttpContextAccessor contextAccessor;
         private readonly IItemPedidoRepository itemPedidoRepository;
+        private readonly ICadastroRepository cadastroRepository;
+
         public PedidoRepository(AplicationContext context ,
-            IHttpContextAccessor contextAccessor, IItemPedidoRepository itemPedidoRepository) : base(context)
+            IHttpContextAccessor contextAccessor, IItemPedidoRepository itemPedidoRepository , ICadastroRepository cadastroRepository) : base(context)
         {
             this.contextAccessor = contextAccessor;
             this.itemPedidoRepository = itemPedidoRepository;
+            this.cadastroRepository = cadastroRepository;
         }
 
         public void AddItem(string codigo)
@@ -52,17 +56,22 @@ namespace CasaDoCodigo.Repositories
         public Pedido GetPedido()
         {
             var pedidoId = GetPedidoId();
-            var pedido = dbSet
+            var pedido =
+                dbSet
                 .Include(p => p.Itens)
-                    .ThenInclude(p => p.Produto)
-                .Where(p => p.Id == pedidoId).SingleOrDefault();
-            if (pedido == null) 
+                    .ThenInclude(i => i.Produto)
+                .Include(p => p.Cadastro)
+                .Where(p => p.Id == pedidoId)
+                .SingleOrDefault();
+
+            if (pedido == null)
             {
                 pedido = new Pedido();
                 dbSet.Add(pedido);
                 context.SaveChanges();
                 SetPedidoId(pedido.Id);
             }
+
             return pedido;
         }
 
@@ -91,6 +100,13 @@ namespace CasaDoCodigo.Repositories
             }
             
             throw new ArgumentException("Não encontramos o item !!");
+        }
+
+        public Pedido UpdateCadastro(Cadastro cadastro)
+        {
+            var pedido = GetPedido();
+            cadastroRepository.Update(pedido.Cadastro.Id,cadastro);
+            return pedido;
         }
     }
 }

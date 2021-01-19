@@ -31,6 +31,7 @@ namespace CasaDoCodigo
             services.AddTransient<IProdutoRepository, ProdutoRepository>();
             services.AddTransient<IPedidoRepository, PedidoRepository>();
             services.AddTransient<IItemPedidoRepository, ItemPedidoRepository>();
+            services.AddTransient<ICadastroRepository, CadastroRepository>();
             //Fornecendo Serviço de padrão de arquitetura MVC.
             services.AddMvc();
             //Fornecendo Servico DeConexão com o banco de dados.
