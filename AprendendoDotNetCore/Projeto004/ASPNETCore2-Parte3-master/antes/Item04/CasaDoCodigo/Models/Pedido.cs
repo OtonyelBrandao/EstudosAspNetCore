@@ -15,6 +15,11 @@ namespace CasaDoCodigo.Models
         {
             Cadastro = new Cadastro();
         }
+        public Pedido(string ClienteId)
+        {
+            this.ClienteId = ClienteId;
+            Cadastro = new Cadastro();
+        }
 
         //TAREFA 02: CRIAR CONSTRUTOR COM ID DO CLIENTE
 
@@ -34,5 +39,7 @@ namespace CasaDoCodigo.Models
         public virtual Cadastro Cadastro { get; private set; }
 
         //TAREFA 01: ADICIONAR ID DO CLIENTE AO PEDIDO
+        [Required]
+        public string ClienteId { get; set; }
     }
 }

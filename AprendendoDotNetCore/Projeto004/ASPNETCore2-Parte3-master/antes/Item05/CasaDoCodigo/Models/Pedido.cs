@@ -11,11 +11,13 @@ namespace CasaDoCodigo.Models
     //veja o diagrama
     public class Pedido : BaseModel
     {
+      
         public Pedido(string clienteId)
         {
             ClienteId = clienteId;
             Cadastro = new Cadastro();
         }
+        
 
         //TAREFA 02: CRIAR CONSTRUTOR COM ID DO CLIENTE
 
