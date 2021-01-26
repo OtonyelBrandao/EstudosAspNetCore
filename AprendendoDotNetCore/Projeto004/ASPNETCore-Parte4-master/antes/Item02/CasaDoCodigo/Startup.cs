@@ -37,6 +37,7 @@ namespace CasaDoCodigo
             services.AddMvc();
             services.AddDistributedMemoryCache();
             services.AddSession();
+            services.AddHttpClient<IRelatorioHelper, RelatorioHelper>();
 
             string connectionString = Configuration.GetConnectionString("Default");
 
