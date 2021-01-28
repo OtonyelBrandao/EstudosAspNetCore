@@ -43,6 +43,7 @@ namespace CasaDoCodigo.IdentityServer
                 },
 
                 // MVC client using hybrid flow
+                //configuração da aplicação que vai utilizar o recurso
                 new Client
                 {
                     ClientId = "CasaDoCodigo.MVC",

@@ -1,0 +1,2 @@
+caso utilize IdentityServe é nescessario crira o projeto pello prompt de comando utilizando
+o comando dotnet new -i identityserver.

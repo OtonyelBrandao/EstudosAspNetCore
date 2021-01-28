@@ -257,3 +257,26 @@
 2019-07-17 16:04:04.163 -03:00 [DBG] Consent Return Url Parameter: returnUrl
 2019-07-17 16:04:04.164 -03:00 [DBG] Error Url: /home/error
 2019-07-17 16:04:04.164 -03:00 [DBG] Error Id Parameter: errorId
+2021-01-28 16:23:46.736 -03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2021-01-28 16:23:46.834 -03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-01-28 16:23:46.838 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-01-28 16:23:46.839 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-01-28 16:23:46.839 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-01-28 16:23:46.839 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-01-28 16:23:46.840 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-01-28 16:23:51.718 -03:00 [DBG] Login Url: /Account/Login
+2021-01-28 16:23:51.725 -03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-01-28 16:23:51.725 -03:00 [DBG] Logout Url: /Account/Logout
+2021-01-28 16:23:51.726 -03:00 [DBG] ConsentUrl Url: /consent
+2021-01-28 16:23:51.726 -03:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-01-28 16:23:51.726 -03:00 [DBG] Error Url: /home/error
+2021-01-28 16:23:51.727 -03:00 [DBG] Error Id Parameter: errorId
+2021-01-28 16:24:28.489 -03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2021-01-28 16:25:00.708 -03:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-01-28 16:25:21.653 -03:00 [DBG] Augmenting SignInContext
+2021-01-28 16:25:21.656 -03:00 [DBG] Adding idp claim with value: local
+2021-01-28 16:25:21.656 -03:00 [DBG] Adding amr claim with value: pwd
+2021-01-28 16:25:21.657 -03:00 [DBG] Adding auth_time claim with value: 1611861921
+2021-01-28 16:25:21.702 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2021-01-28 16:25:25.801 -03:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"70cb8e0f-546a-4026-88ec-c45dff9fdc7b","DisplayName":"alice","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM63O8UH3QH4:00000003","TimeStamp":"2021-01-28T19:25:25.0000000Z","ProcessId":2904,"LocalIpAddress":"127.0.0.1:30910","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-01-28 16:25:26.286 -03:00 [INF] AuthenticationScheme: Identity.Application was challenged.

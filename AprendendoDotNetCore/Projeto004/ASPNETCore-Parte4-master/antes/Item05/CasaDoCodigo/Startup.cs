@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using System;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace CasaDoCodigo
 {
@@ -102,7 +103,8 @@ namespace CasaDoCodigo
             //        options.ClientId = Configuration["ExternalLogin:Google:ClientId"];
             //        options.ClientSecret = Configuration["ExternalLogin:Google:ClientSecret"];
             //    });
-
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+            //Configuração do OAuth e OpendId.
             services.AddAuthentication(options =>
             {
                 //forma de autenticação local do usuário
@@ -110,18 +112,19 @@ namespace CasaDoCodigo
                 //protocolo que define o fluxo de autenticação
                 options.DefaultChallengeScheme = "OpenIdConnect";
             })
-            .AddCookie()
-            .AddOpenIdConnect(options =>
+            .AddCookie()//Adicionando Cookie
+            .AddOpenIdConnect(options =>//Adicionando Conexão com OpenId
             {
                 options.SignInScheme = "Cookies";
-                options.Authority = "http://localhost:5000";
-                options.ClientId = "CasaDoCodigo.MVC";
+                options.Authority = Configuration["CasaDoCodigoIdentityServerUrl"];//URL Da Autoridade De Autenticação.
+                options.ClientId = "CasaDoCodigo.MVC";//Id Do Cliente.
                 options.ClientSecret = "49C1A7E1-0C79-4A89-A3D6-A37998FB86B0";
-                options.SaveTokens = true;
+                options.SaveTokens = true;//Utilização de Tokens.
                 //1) autorização e 2) identidade do usuário
                 options.ResponseType = "code id_token";
                 //código de autorização + token de identidade
                 options.RequireHttpsMetadata = false;
+                options.GetClaimsFromUserInfoEndpoint = true;
             });
 
             services.AddHttpClient<IRelatorioHelper, RelatorioHelper>();
@@ -146,7 +149,7 @@ namespace CasaDoCodigo
             }
 
             app.UseStaticFiles();
-            app.UseAuthentication();
+            app.UseAuthentication();//Ativando a Utilização de Autentiação
             //INTEGRACAO 1) adicionar componente Identity
             //ASP.NET Core utiliza o padrão "Cadeia de Responsabilidade"
             //https://pt.wikipedia.org/wiki/Chain_of_Responsibility

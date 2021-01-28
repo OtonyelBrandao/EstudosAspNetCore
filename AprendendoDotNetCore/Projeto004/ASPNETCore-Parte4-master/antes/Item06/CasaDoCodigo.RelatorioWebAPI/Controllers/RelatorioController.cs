@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -33,6 +34,7 @@ namespace CasaDoCodigo.RelatorioWebAPI.Controllers
         }
 
         // POST: api/Relatorio
+        [Authorize]
         [HttpPost]
         public void Post([FromBody] string value)
         {

@@ -1,0 +1,7 @@
+Para Criar Uma Migration e fazer uma migration siga esses comandos.
+ Add-Migration "name" -context // utilize o context para caso tenha mais de um DBContext.
+===========================================================================================
+
+para que o banco de dados seja atualizado utilize o comando.
+
+Update-DataBase -context // utilize o contex caso haja mais de um DBContext
