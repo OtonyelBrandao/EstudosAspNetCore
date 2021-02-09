@@ -1,0 +1,19 @@
+Areas <- Pasta reservada para separar partes de uma aplicação em areas
+ area1 
+  Conttrolers <- controladores dessa area
+  Data <- Dados Dessa area
+  Models <- Modelos dessa area
+  ViewComponents <- Componentes de visualizações dessa area
+  Views <-Visualizações dessa area
+ area2
+  Conttrolers
+  Data
+  Models
+  ViewComponents
+  Views
+ area3
+  Conttrolers
+  Data
+  Models
+  ViewComponents
+  Views
